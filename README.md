@@ -129,28 +129,6 @@ languages: French (Native) / English C1 / Russian (Native)
 
 <br/>
 
-<!-- CONTRIBUTION SNAKE -->
-
-<img src="./assets/section-game.svg" width="280"/>
-
-<br/><br/>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/pacman-contribution-graph-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/pacman-contribution-graph.svg"/>
-    <img alt="Snake eating contributions" src="./assets/pacman-contribution-graph-dark.svg" width="100%"/>
-  </picture>
-  <br/>
-  <sub>&#x1F40D; Watch the snake devour my contributions!</sub>
-</div>
-
-<br/>
-
-<img src="./assets/divider.svg" width="100%"/>
-
-<br/>
-
 <!-- TECH STACK -->
 
 <img src="./assets/section-tech.svg" width="180"/>
@@ -264,22 +242,6 @@ languages: French (Native) / English C1 / Russian (Native)
 <br/>
 
 <img src="./assets/divider.svg" width="100%"/>
-
-<br/>
-
-<!-- DEV QUOTE -->
-
-<div align="center">
-
-### &#x1F4AD; Random Dev Quote
-
-<br/>
-
-<a href="https://github.com/Dimi3grn">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" width="60%"/>
-</a>
-
-</div>
 
 <br/>
 
