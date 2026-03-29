@@ -98,17 +98,11 @@ languages: French (Native) / English C1 / Russian (Native)
 <div align="center">
 
   <a href="https://github.com/Dimi3grn">
-    <img height="195em" src="https://github-readme-stats.vercel.app/api?username=Dimi3grn&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b5ea7&icon_color=a67fd4&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+    <img height="195em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Dimi3grn&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b5ea7&icon_color=a67fd4&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
   </a>
   &nbsp;
   <a href="https://github.com/Dimi3grn">
-    <img height="195em" src="https://streak-stats.demolab.com?user=Dimi3grn&theme=tokyonight&hide_border=true&background=0d1117&ring=7b5ea7&fire=a67fd4&currStreakLabel=7b5ea7" alt="GitHub Streak"/>
-  </a>
-
-  <br/><br/>
-
-  <a href="https://github.com/Dimi3grn">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dimi3grn&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b5ea7&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
+    <img height="195em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Dimi3grn&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b5ea7&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
   </a>
 
   <br/><br/>
