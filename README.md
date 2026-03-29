@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header-animation.svg" width="100%" alt="Dimitri Gourrin"/>
+  <img src="./assets/header.svg" width="100%" alt="Dimitri Gourrin"/>
 </div>
 
 <br/>
@@ -23,5 +23,5 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/terminal-intro.svg" alt="Terminal intro"/>
+  <img src="./assets/terminal.svg" alt="Terminal intro"/>
 </div>

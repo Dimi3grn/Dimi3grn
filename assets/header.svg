@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
   <defs>
-    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#5a3d8a">
         <animate attributeName="stop-color" values="#5a3d8a;#7b5ea7;#a67fd4;#5a3d8a" dur="7s" repeatCount="indefinite"/>
       </stop>
@@ -12,7 +12,7 @@
         <animate attributeName="stop-color" values="#a67fd4;#5a3d8a;#7b5ea7;#a67fd4" dur="7s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="glow">
       <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#7b5ea7" flood-opacity="0.6"/>
     </filter>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -20,36 +20,34 @@
     </pattern>
   </defs>
 
-  <rect width="100%" height="100%" fill="#0d1117"/>
-  <rect width="100%" height="100%" fill="url(#grid)"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#purpleGradient)"/>
+  <rect width="900" height="180" fill="#0d1117"/>
+  <rect width="900" height="180" fill="url(#grid)"/>
+  <rect x="0" y="0" width="900" height="3" fill="url(#pg)"/>
 
   <g filter="url(#glow)">
     <text x="450" y="80" text-anchor="middle"
-      font-family="'Segoe UI', 'SF Pro Display', -apple-system, sans-serif"
-      font-size="50" font-weight="700" fill="url(#purpleGradient)" letter-spacing="4">
+      font-family="Segoe UI, SF Pro Display, sans-serif"
+      font-size="50" font-weight="700" fill="url(#pg)" letter-spacing="4">
       DIMITRI GOURRIN
     </text>
   </g>
 
   <text x="450" y="118" text-anchor="middle"
-    font-family="'Segoe UI', 'SF Pro Display', -apple-system, sans-serif"
+    font-family="Segoe UI, SF Pro Display, sans-serif"
     font-size="14" fill="#8b949e" letter-spacing="4">
     FULLSTACK DEVELOPER &#x2022; YNOV AIX &#x2022; AIX-EN-PROVENCE
   </text>
 
-  <g opacity="0.7">
-    <line x1="140" y1="143" x2="380" y2="143" stroke="url(#purpleGradient)" stroke-width="1">
-      <animate attributeName="x2" values="140;380" dur="1.2s" fill="freeze"/>
-    </line>
-    <line x1="520" y1="143" x2="760" y2="143" stroke="url(#purpleGradient)" stroke-width="1">
-      <animate attributeName="x1" values="760;520" dur="1.2s" fill="freeze"/>
-    </line>
-  </g>
+  <line x1="140" y1="143" x2="380" y2="143" stroke="url(#pg)" stroke-width="1" opacity="0.7">
+    <animate attributeName="x2" values="140;380" dur="1.2s" fill="freeze"/>
+  </line>
+  <line x1="520" y1="143" x2="760" y2="143" stroke="url(#pg)" stroke-width="1" opacity="0.7">
+    <animate attributeName="x1" values="760;520" dur="1.2s" fill="freeze"/>
+  </line>
 
-  <polygon points="450,135 459,145 450,156 441,145" fill="url(#purpleGradient)" opacity="0.9">
+  <polygon points="450,135 459,145 450,156 441,145" fill="url(#pg)" opacity="0.9">
     <animateTransform attributeName="transform" type="rotate" from="0 450 145" to="360 450 145" dur="12s" repeatCount="indefinite"/>
   </polygon>
 
-  <rect x="0" y="177" width="900" height="3" fill="url(#purpleGradient)"/>
+  <rect x="0" y="177" width="900" height="3" fill="url(#pg)"/>
 </svg>
