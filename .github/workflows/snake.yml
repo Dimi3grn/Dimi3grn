@@ -1,0 +1,27 @@
+name: Generate Snake Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/pacman-contribution-graph.svg?palette=github&color_snake=#7b5ea7
+            assets/pacman-contribution-graph-dark.svg?palette=github-dark&color_snake=#a67fd4
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: "assets/pacman-contribution-graph*.svg"
+          message: "chore: update snake contribution graph [skip ci]"
