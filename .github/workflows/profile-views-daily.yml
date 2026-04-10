@@ -1,0 +1,37 @@
+# Enregistre chaque jour le delta de vues profil (komarev/ghpvc) et régénère un graphique SVG.
+# Les fichiers data/profile-views.json et assets/profile-views-chart.svg ne sont pas liés depuis le README
+# (stats visibles seulement en ouvrant le repo ou en clone).
+
+name: Profile views daily snapshot
+
+on:
+  schedule:
+    # 06:15 UTC tous les jours (ajuste si tu veux une autre heure)
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record views and build chart
+        env:
+          PROFILE_VIEWS_USERNAME: ${{ github.repository_owner }}
+        run: python3 scripts/profile_views_tracker.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/profile-views.json assets/profile-views-chart.svg
+          if git diff --staged --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "chore: profile views snapshot [skip ci]"
+            git push
+          fi
